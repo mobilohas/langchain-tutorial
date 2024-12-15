@@ -6,5 +6,5 @@ async def on_chat_start():
 
 @cl.on_message
 async def on_message(input_message):
-    print("입력된 메시지: " + input_message)
+    print("입력된 메시지: " + input_message.content)
     await cl.Message(content="안녕하세요!").send()
